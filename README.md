@@ -12,9 +12,11 @@ This repository contains the core software tools required to verify the claims o
 3.  **Polymorphic Noise:** Without the active hardware map, data on the wire is mathematically indistinguishable from random noise.
 
 ## Contents
-* `agc.py`: **ATOMiK Genome Compiler.** Translates human-readable JSON schemas into binary "Genome" files (.gnm). Inspect this to prove that the output contains *only* logic tags, with no hidden OS payload.
+* `agc.py`: **ATOMiK Genome Compiler.** Translates human-readable JSON schemas into binary "Genome" files (.gnm). Inspect this to verify no OS payload exists.
 * `test_schema.json`: **The Universal Schema.** A sample definition file for a DoD-grade secure uplink.
-* `aos.c` / `atomik_core_sim.c`: **The Kernel Simulator.** A C-based simulation of the ATOMiK FPGA Core (37ns latency profile) to test key destruction logic.
+* `aos.c` / `atomik_core_sim.c`: **The Kernel Simulator.** C-based simulation of the FPGA Core (37ns latency profile).
+* `atomik_core.h`: **Header File.** Core definitions and error codes.
+* `build.bat` / `Makefile`: **Build Scripts.** One-click compilation tools for Windows/Linux.
 
 ## The "Burn" Challenge
 We invite you to verify the "Burn-on-Read" protocol yourself:
@@ -26,9 +28,9 @@ We invite you to verify the "Burn-on-Read" protocol yourself:
     *Observe that the output `.gnm` file is just a few bytes of configuration.*
 
 2.  **Build the Simulator:**
-    ```bash
-    gcc aos.c atomik_core_sim.c -o aos
-    ```
+    * **Windows:** Double-click `build.bat` (or run it in terminal).
+    * **Linux/Mac:** Run `make`.
+    * *Manual:* `gcc aos.c atomik_core_sim.c -o aos -lws2_32`
 
 3.  **Run the Kernel:**
     ```bash
@@ -48,4 +50,6 @@ We invite you to verify the "Burn-on-Read" protocol yourself:
 * **V3 (Future):** Photonic Interference Logic.
 
 ---
+## License
+This project is licensed under the **Apache License 2.0**.
 *Copyright © 2026 ATOMiK Protocol. Released for educational and verification purposes.*
