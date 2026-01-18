@@ -1,4 +1,4 @@
-#include "../include/atomik_core.h"
+#include "atomik_core.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -208,4 +208,5 @@ atomik_result_t atomik_get_metrics(atomik_handle_t dev, atomik_metrics_t* out_me
     out_metrics->current_watts = 0.05 + ((100.0 - out_metrics->grid_save_percent) * 0.001); 
 
     return ATOMIK_SUCCESS;
+
 }
