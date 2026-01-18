@@ -29,6 +29,10 @@ Traditional kernels rely on persistent state—storing data in RAM and waiting f
 ### Burn-on-Read (OTP Mode)
 Our V3 Kernel treats the hardware map as a transactional requirement. In `OTP_MODE`, the system forces a map rotation the moment a transaction is completed. This creates an **Asynchronous Stateless Network** where nodes stay in sync via "Proof of Origin" handshakes rather than vulnerable global clocks.
 
+<div align="center">
+  <video src="[YOUR_VIDEO_URL.mp4](https://github.com/user-attachments/assets/ba39d61e-6045-4148-a913-fc4037805261)" width="600" controls></video>
+</div>
+
 ---
 
 ## Repository Contents
