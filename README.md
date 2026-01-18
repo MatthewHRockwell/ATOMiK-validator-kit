@@ -106,6 +106,12 @@ Inside the AOS terminal:
 
 ---
 
+## Feature Request
+
+All feature requests are welcome, however we are unable to accomodate all requests. Requests can be submitted through **[Jira](https://matthewhrockwell.atlassian.net/jira/software/projects/SCRUM/form/1?atlOrigin=eyJpIjoiMWFjYzAyYjc2MWZiNDgxNThkYjFkNDg3NDk3MDFiY2YiLCJwIjoiaiJ9)**
+
+---
+
 ## License
 
 This project is licensed under the **Apache License 2.0**. This ensures that the ATOMiK Validator Kit remains an open, auditable standard for the security community while protecting the underlying intellectual property of the ATOMiK Protocol.
