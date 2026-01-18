@@ -116,4 +116,4 @@ All feature requests are welcome, however we are unable to accomodate all reques
 
 This project is licensed under the **Apache License 2.0**. This ensures that the ATOMiK Validator Kit remains an open, auditable standard for the security community while protecting the underlying intellectual property of the ATOMiK Protocol.
 
-*Copyright © 2026 ATOMiK Protocol. Released for educational and verification purposes.*
+***Copyright © 2026 ATOMiK Protocol. Released for educational and verification purposes.***
