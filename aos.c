@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <winsock2.h>
-#include "../include/atomik_core.h"
+#include "atomik_core.h"
 
 #pragma comment(lib, "ws2_32.lib")
 
@@ -136,3 +136,4 @@ int main() {
     return 0;
 
 }
+
